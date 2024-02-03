@@ -4,14 +4,12 @@ body{
 
 header{
     width: 100%;
-    max-width: 800px;
     height: 15%;
-    border-bottom: 15px solid #6b5e62;
-    padding: 3% 15%;    
+    border-bottom: 15px solid #6b5e62;      
     margin-bottom: 5%;  
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
+    display: block; 
+    padding-bottom: 3%;
+    padding-top: 5%;
 }
 
 header h1{
@@ -130,7 +128,7 @@ nav {
     padding: 10px 15px;
   }
 
-  .text-box{
+  .text-box, #text-section{
     width: 70%;
     display: block;
     background-color: #efeff0;
@@ -140,3 +138,71 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #table-head{
+    cursor: pointer;
+  }
+
+  #picture-gallery{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*RAMSCHEMA*/
+  .search{
+    max-width: 60%;
+    margin: 5% auto 5% auto;
+  }
+
+  table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  @media screen and (min-width: 501px){
+    table{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+  @media screen and (min-width: 850px){
+    table{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+  th{
+    text-align: left;
+  }
+
+  /*BILDGALLERI*/
+    #picture-gallery{
+        width: 100%;
+    }
+
+    img{
+        margin: 10px auto 10px auto;
+        
+    }
+
+    footer{
+        width: 100%;
+        background-color: #6b5e62;
+        color: white;
+        padding: 2%;
+        margin-top: 5%;
+    }
+
+    footer p{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+ 

@@ -26,9 +26,32 @@
               <li><a href="about.html">OM UPPGIFTEN</a></li>
               <li><a href="schedule.html">RAMSCHEMA</a></li>
             </ul>
-          </nav>
-    
+          </nav>  
 
     </header>
+
+    <section id="text-section">
+      <h2>Arbetsprocessen</h2>
+      <p>Node.js har installerats, som gör det möjligt att exekvera kod JavaScript-kod 
+        utanför webbläsaren. Tillsammans med Node.js installerades <i>Node Package Manager</i>, 
+        npm, som behövs för hantering av JavaScript-paket och bibiliotek. Vid installationen 
+        av npm skapas en mapp med namnet <i>node-modules</i>, och den exkluderas från projektet genom 
+        att ange den i .gitignore-filen.</p>
+      <p>För att automatisera en del av processen installerades <i>Parcel</i>, som bland annat 
+        upptäcker och paketerar moduler automatiskt, har stöd för flera filtyper och man 
+        behöver därför inte konfigurera relationen mellan dem manuellt.
+
+        Paketet <i>Sharp</i> installerades för att kunna visa bilder i andra format än i original 
+        (t ex webp).</p>
+      <p>För att källkodsfilerna (HTML, CSS, JS) ska ta mindre plats vid en publicering 
+        (det vill säga komprimeras) sker via Parcel en optimering av koden i publiceringsfilerna. 
+        Det kan till exempel vara att CSS-filerns slås ihop och på andra sätt görs så liten 
+        som möjligt.</p>
+      <p>Projektet laddas upp via Git och filerna optimeras automatiskt vid en commit och push 
+        i en process som brukar kallas <i>Continuous Integration/Continuous Deployment</i>.</p>
+      <p>Bakåtkompabiliteten automatiserades för att inte behöva koda manuellt för äldre webbläsare. 
+        Detta genom att i package.json-filen lägga till rubriken <i>browserslist</i> och där ange vilka 
+        versioner bakåt som webbplatsen också ska anpassas för.</p>
+    </section>
 </body>
 </html>

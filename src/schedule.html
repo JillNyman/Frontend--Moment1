@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/main.css">
     <title>RAMSCHEMA</title>
     <script src="js/main.js" type="module"></script>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -30,18 +32,21 @@
     
 
     </header>
+    <div class="search">
+        <label for="searchform">SÖK</label>
+        <input type="text" id="searchform">
+    </div>
     <div class="table-box">
-        <table id="table-course">
+        <table>
+            <thead id="table-head">
             <tr>
-                <th>Kurskod</th>
-                <th>Namn</th>
-                <th>Progression</th>
+                <th id="head-code">Kurskod</th>
+                <th id="head-name">Namn</th>
+                <th id="head-prog">Nivå</th>
             </tr>
-            <tr>
-                <td id="code-one"></td>
-                <td id="name-one"></td>
-                <td id="prog-one"></td>
-            </tr>
+            </thead>
+            <tbody id="table-course"></tbody>
+           
         </table>
     </div>
     
